@@ -1,0 +1,97 @@
+/* Основные стили для всего сайта */
+body {
+  background-color: #f0f0f0; 
+  font-family: 'Times New Roman', Times, serif; 
+  margin: 0; 
+  padding: 0; 
+}
+
+/* Стили для блока с текстом */
+.text-block {
+  background-color: white; 
+  padding: 20px; 
+  margin: 20px auto; 
+  width: 50%; 
+  text-align: center; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  border-radius: 5px; 
+}
+
+/* Стили для кнопки */
+.click-me {
+  display: inline-block; 
+  padding: 10px 20px; 
+  margin: 5px; 
+  background-color: #4a90e2; 
+  color: #ffffff; 
+  text-decoration: none; 
+  border-radius: 5px; 
+  border: 1px solid #dcdcdc53; 
+  transition: background-color 0.3s; 
+  cursor: pointer; 
+}
+
+/* Изменение стилей кнопки при наведении */
+.click-me:hover {
+  background-color: #259bc3; 
+}
+
+/* Стили для текста с белым фоном */
+.white-text {
+  color: black; 
+  text-align: center; 
+}
+
+/* Стили для блока с кнопками назад и вперед */
+.backnext {
+  display: flex; 
+  justify-content: space-between; 
+  padding-top: 20px; 
+}
+
+/* Стили для кнопки следующего вопроса */
+.next-question {
+  margin-right: auto; 
+}
+
+/* Общие стили для кнопок назад и вперед */
+.back, .next {
+  background-color: #4a90e2; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+/* Адаптивные стили для устройств с шириной экрана до 1200px */
+@media (max-width: 1200px) {
+  .text-block {
+    width: 70%; 
+  }
+}
+
+/* до 768px */
+@media (max-width: 768px) {
+  .text-block {
+    width: 90%;
+  }
+
+  .backnext {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .back, .next {
+    width: 100%; 
+    margin: 5px 0; 
+  }
+}
+
+/* до 480px */
+@media (max-width: 480px) {
+  .click-me {
+    width: 100%; 
+    margin: 5px 0; 
+  }
+}

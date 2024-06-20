@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вопрос 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="white-text">Тест</h1>
+    <h2 class="white-text">Один вариант ответа</h2> 
+    <div class="text-block">
+        <h3>Вопрос 4/5</h3>
+        <h4>Число Пи обычно округляют до 3.14. Какие следующие 3 цифры,если число Пи округлить до пяти цифр после запятой?</h4>
+        <button class="click-me" onclick="Selected()">159</button>
+        <button class="click-me" onclick="Selected()">471</button>
+        <button class="click-me" onclick="Selected()">725</button>
+        <button class="click-me" onclick="Selected()">094</button>
+    </div>
+    <div class="backnext">
+        <button class="click-me" onclick="previousQuestion()">Предыдущий вопрос</button>
+        <button class="click-me" id="nextQuestion" disabled onclick="nextQuestion()">Следующий вопрос</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

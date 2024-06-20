@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вопрос 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="white-text">Тест</h1>
+    <h2 class="white-text">Один вариант ответа</h2> 
+    <div class="text-block">
+        <h3>Вопрос 5/5</h3>
+        <h4>Сколько в среднем недель в одном году?</h4>
+        <button class="click-me" onclick="Selected()">50</button>
+        <button class="click-me" onclick="Selected()">51</button>
+        <button class="click-me" onclick="Selected()">53</button>
+        <button class="click-me" onclick="Selected()">52</button>
+    </div>
+    <div class="backnext">
+        <button class="click-me" onclick="previousQuestion()">Предыдущий вопрос</button>
+        <button class="click-me" id="nextQuestion" disabled onclick="nextQuestion()">Посмотреть результат</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

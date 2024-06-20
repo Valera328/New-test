@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="white-text">Тест</h1>
+    <h2 class="white-text">Один вариант ответа</h2> 
+    <div class="text-block">
+        <h3>Вопрос 1/5</h3>
+        <h4>Флаг какой страны в мире единственный не имеет прямоугольную форму?</h4>
+        <button class="click-me" onclick="Selected('Непал')">Непал</button>
+        <button class="click-me" onclick="Selected('Камбоджа')">Камбоджа</button>
+        <button class="click-me" onclick="Selected('Бутан')">Бутан</button>
+        <button class="click-me" onclick="Selected('Шри-Ланка')">Шри-Ланка</button>
+    </div>
+    <div class="backnext">
+        <button class="click-me" id="nextQuestion" disabled>Следующий вопрос</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
